@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0;
+    font-family: 'Mate SC', serif;
+  }
+}
