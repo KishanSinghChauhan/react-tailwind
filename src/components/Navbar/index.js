@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../../assets/logo.svg'
+
 const Navbar = () => {
+  const [stickNav, setStickNav] = useState(false)
+  useEffect(() => {
+    const changeNavbarColor = () => {
+      if (window.scrollY >= 10) {
+        setStickNav(true)
+      } else {
+        setStickNav(false)
+      }
+    }
+    window.addEventListener('scroll', changeNavbarColor)
+  }, [])
+
   return (
-    <div className="navbar">
+    <div className={`sticky bg-white top-0 ${stickNav ? 'shadow-lg z-10' : ''}`}>
       <div className="container">
         <div className="flex justify-between items-center h-24">
           <div className="w-16">
