@@ -19,26 +19,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "lint-staged": "lint-staged"
+    "eject": "react-scripts eject"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,scss,less}": [
-      "prettier --write",
-      "git add"
-    ],
-    "src/**/*.{js,jsx}": [
-      "eslint"
-    ],
-    "src/**/*.{scss,less}": [
-      "stylelint"
-    ]
-  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -59,8 +42,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
