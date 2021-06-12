@@ -1,22 +1,29 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faHeart, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faHeart, faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <div className="container px-4">
       <div className="pb-12 md:pb-24 pt-12 flex flex-wrap justify-between items-center">
         <div className="space-y-4 w-full md:w-1/2">
-          <p className="text-green-700 text-sm font-bold">CHOOSE YOUR BEST COURSE</p>
-          <h1 className="font-black text-4xl md:text-5xl">Start learning from best plateform</h1>
+          <p className="text-green-700 text-sm font-bold">
+            CHOOSE YOUR BEST COURSE
+          </p>
+          <h1 className="font-black text-4xl md:text-5xl">
+            Start learning from best plateform
+          </h1>
           <p className="text-gray-500">
-            21st century skills help students become smarter through specialised after school
-            classes, academic tuitions summer camps and workshops.
+            21st century skills help students become smarter through specialised
+            after school classes, academic tuitions summer camps and workshops.
           </p>
           <div className="flex flex-nowrap justify-around items-center p-4 space-x-2 rounded-md shadow-lg w-full md:max-w-max">
             <FontAwesomeIcon icon={faSearch} className="text-gray-400" />
-            <input placeholder="search online course" className="focus:outline-none" />
-            <button className="bg-green-50 text-green-700 py-2 px-3 rounded-md hover:bg-green-600 hover:text-white">
+            <input
+              placeholder="search online course"
+              className="focus:outline-none"
+            />
+            <button className="bg-green-50 text-green-700 py-2 px-3 rounded-sm hover:bg-green-600 hover:text-white">
               Search
             </button>
           </div>
@@ -46,7 +53,9 @@ const Header = () => {
           </div>
           <div className="w-1/2 md:w-full pt-4 md:pt-0">
             <h3 className="text-lg font-black">2000+ Courses</h3>
-            <p className="text-gray-500 w-2/3">every Day we add more to learn.</p>
+            <p className="text-gray-500 w-2/3">
+              every Day we add more to learn.
+            </p>
           </div>
           <div className="w-1/2 md:w-full pt-4 md:pt-0">
             <h3 className="text-lg font-black">220+ Instructor</h3>
@@ -55,7 +64,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

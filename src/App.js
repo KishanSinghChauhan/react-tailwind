@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Insrtructor from "./components/Instructor";
 import Message from "./components/Message";
+import Introduction from "./components/Introduction";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Insrtructor />
       <Message />
+      <Introduction />
     </>
   );
 };

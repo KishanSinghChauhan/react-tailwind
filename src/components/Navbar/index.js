@@ -27,7 +27,7 @@ const Navbar = () => {
             <li className="cursor-pointer">Courses</li>
             <li className="cursor-pointer">Intructor</li>
             <li className="cursor-pointer">Contact Us</li>
-            <button className="bg-green-700 text-white py-2 px-3 rounded-md hover:bg-green-600">
+            <button className="bg-green-700 text-white py-2 px-3 rounded-sm hover:bg-green-600">
               Get Start
             </button>
           </ul>

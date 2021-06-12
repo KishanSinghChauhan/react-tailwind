@@ -100,7 +100,7 @@ const Message = () => {
             <FontAwesomeIcon icon={faFlag} className="text-blue-500 mr-3" />
             <p className="text-gray-500">Daily Report</p>
           </div>
-          <button className="bg-green-700 text-white py-2 px-3 rounded-md hover:bg-green-600">
+          <button className="bg-green-700 text-white py-2 px-3 rounded-msmd hover:bg-green-600">
             Get Start
           </button>
         </div>
