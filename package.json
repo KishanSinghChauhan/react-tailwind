@@ -10,7 +10,6 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "postcss-import": "^14.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -21,10 +20,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "lint-staged": "lint-staged",
-    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,scss,less}\"",
-    "eslint": "eslint --ext .js,jsx src",
-    "stylelint": "stylelint \"src/**/*.{scss,less}\""
+    "lint-staged": "lint-staged"
   },
   "husky": {
     "hooks": {
@@ -62,21 +58,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.8.3",
     "autoprefixer": "^9",
-    "babel-plugin-import": "^1.13.0",
-    "customize-cra": "^0.9.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^5.0.0",
     "husky": "^4.2.3",
-    "less-loader": "^5.0.0",
     "lint-staged": "^10.0.8",
-    "node-sass": "^4.13.1",
     "postcss": "^7",
-    "prettier": "^1.19.1",
-    "stylelint": "^13.2.0",
-    "stylelint-config-prettier": "^5.2.0",
-    "stylelint-config-standard": "^18.3.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

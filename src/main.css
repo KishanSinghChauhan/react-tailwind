@@ -10,3 +10,9 @@
     font-family: 'Mate SC', serif;
   }
 }
+
+
+
+.my-container{
+  @apply container px-4;
+}

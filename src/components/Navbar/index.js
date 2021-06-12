@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from 'react'
-import Logo from '../../assets/logo.svg'
+import React, { useState, useEffect } from "react";
+import Logo from "../../assets/logo.svg";
 
 const Navbar = () => {
-  const [stickNav, setStickNav] = useState(false)
+  const [stickNav, setStickNav] = useState(false);
   useEffect(() => {
     const changeNavbarColor = () => {
       if (window.scrollY >= 10) {
-        setStickNav(true)
+        setStickNav(true);
       } else {
-        setStickNav(false)
+        setStickNav(false);
       }
-    }
-    window.addEventListener('scroll', changeNavbarColor)
-  }, [])
+    };
+    window.addEventListener("scroll", changeNavbarColor);
+  }, []);
 
   return (
-    <div className={`sticky bg-white top-0 ${stickNav ? 'shadow-lg z-10' : ''}`}>
-      <div className="container">
-        <div className="flex justify-between items-center h-24">
+    <div
+      className={`sticky bg-white top-0 ${stickNav ? "shadow-lg z-10" : ""}`}
+    >
+      <div className="container px-4">
+        <div className="flex justify-between items-center h-20">
           <div className="w-16">
             <img src={Logo} alt="logo" />
           </div>
@@ -32,7 +34,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
